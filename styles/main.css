@@ -1,0 +1,187 @@
+.menu {
+    min-height: 100vh;
+    width: 40%;
+}
+p {
+    font-size: 1.4rem;
+    color: var(--text-light);
+}
+.dash {
+    min-width: 5rem;
+    max-height: 2px;
+    width: 5rem;
+    background: var(--text-light);
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+}
+ul.menu-lateral {
+    margin-top:5rem;
+    display: block;
+   
+}
+ul li{
+    padding: 1rem 0;
+    max-width: 25rem;
+}
+ul li a {
+    display: flex;
+}
+ul li a:hover >.dash {
+    background: var(--subtitle);
+    transition: .3s;
+    width: 7.5rem;
+}
+ul li a:hover
+ {
+    color: var(--subtitle);
+    transition: color .5s;
+    background: none;
+}
+ul li a.active {
+    color: var(--subtitle);
+    transition: color .5s;
+}
+a.active > .dash{
+    background: var(--subtitle);
+}
+.social-midia  {
+    height: 15rem;
+    display: flex;
+    align-items: end;
+}
+.social-midia span.material-symbols-outlined {
+    color: var(--text-light);
+    font-size: 3.5rem;
+    margin-right: 3.5rem;
+    transition: color .5s;
+}
+.social-midia span.material-symbols-outlined:hover {
+    color: var(--text-primary);
+    transition: color .5s;
+}
+svg:hover {
+    fill: var(--subtitle);
+    transition: fill .5s;
+  }
+  svg{
+    fill: var(--text-light);
+    transition: fill .5s;
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-right: 2.3rem;
+  }
+
+.main-section {
+    width: 60%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    overflow:scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.main-section p {
+    font-size: 1.6rem;
+    margin-bottom: 1.1rem;
+}
+.main-section .box-avatar {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.main-section .img-avatar{
+    border: .8rem solid var(--bg-hover);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+.main-section .img-avatar img{ 
+    border-radius: 50%;
+}
+.box-about {
+    height: auto;
+}
+.card {
+    background: transparent;
+     box-shadow: none;
+     padding: 2.5rem 1.5rem;
+     border-radius: 8px;
+      transition: all ease .3s
+}
+.card:hover{
+    background: var(--bg-hover);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.034);
+    transition: all ease .3s
+   
+}
+.card-data {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--subtitle);
+    width: 11.6rem;
+}
+.card-data img {
+    border-radius: .4rem;
+    box-shadow: 5px 7px 22px var(--bg-secundary);
+    border: -6px -3px 42px var(--bg-secundary);
+}
+.card-description {
+    padding-top: 1.9rem;
+}
+.card-description p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.card-badges {
+  display: flex;
+  width: 100%;
+  
+}
+.badges {
+    color: #fff;;
+    background: var(--bg-secundary);
+    font-size: 1.2rem;
+    padding: .5rem .82rem;
+    border-radius: 12px;
+    margin-right: .7rem;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 970px){
+   .main-section {
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow:auto;
+    overflow-x:auto;
+    scroll-behavior:initial;
+   }
+   .social-midia  {
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+   }
+    .menu {
+       width: 100%;
+       min-height: 5vh;
+   }
+   .card:hover{
+    background: none;
+    box-shadow: none; 
+}
+.card {
+     padding: 2.5rem 0;
+}
+.box-about {
+    height: auto;
+}
+.card-data {
+    width: 100%;
+}
+.card-data img {
+    margin-bottom: 2rem;
+    height: 20rem;
+} 
+}

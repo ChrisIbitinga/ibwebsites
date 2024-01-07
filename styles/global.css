@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: var(--bg-primary);
+}
+
+body,
+html {
+    color: var(--text-primary);
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea {
+    /* intervalo de tamanho min, padrÃ£o e mÃ¡ximo */
+    font-size: clamp(14px, 1.6rem, 2vw);
+    resize: none;
+}
+a {
+    color: var(--text-light);
+}
+strong {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+.is-btn-primary{
+    background: var(--subtitle);
+} 
+.title {
+    font-size: 4.6rem;
+    line-height: 1;
+    font-weight: 700;
+}
+.subtitle {
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--subtitle);
+}
+.toast {
+    background: var(--subtitle);
+    font-weight: 500;
+}
+.pt-1 {
+    padding-top: 7rem;
+}
+.z-depth-3 {
+    -webkit-box-shadow: 0 8px 17px 2px rgba(19, 30, 47, 0.486), 0 3px 14px 2px rgba(19, 30, 47, 0.267), 0 5px 5px -3px rgba(19, 30, 47, 0.116);
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+}
+a.text-link{
+    display: flex;
+}
+.card:hover a.text-link{
+    display: flex;
+    color: var(--subtitle);
+    transition: ease .5s;
+}
+.card:hover span.material-symbols-outlined {
+    transform: rotate(-90deg);
+}
+a.text-link span{
+    margin-left: 1rem;
+}
+.modal {
+    background: var(--bg-hover);
+}
+.modal p{
+   padding: 0 10rem;
+}
+.modal .omg-avatar {
+    width: 10rem;
+}
+.modal .modal-footer {
+    background: var(--bg-hover);
+    color: var(--subtitle);
+}
+.modal .modal-footer a{
+    color: var(--subtitle);
+}
+@media screen and (max-width: 970px) {
+    .pt-1{
+        padding-top: 3rem;
+    }
+    .title {
+        font-size: 4.2rem;
+    }
+    .subtitle {
+        font-size: 1.7rem;
+    }
+    .modal p {
+        padding: 0;
+    }
+}
